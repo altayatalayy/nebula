@@ -1,0 +1,6 @@
+.vscode/
+share/
+venv/
+*.sqlite
+
+__pycache__/
