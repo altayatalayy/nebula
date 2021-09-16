@@ -1,5 +1,5 @@
 body {
-	background-color: #ddd; 
+	background-color: #ccc; 
 	padding: 0;
 	margin: 0;
 }
@@ -22,13 +22,14 @@ fieldset {
 	margin-left: 5rem;
 	margin-right: 1rem;
 	margin-top: 7%;
-	background-color: gray;
+	background-color: rgba(160, 150, 150, 0);
 	padding: 25px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 10;
 	
 }
 

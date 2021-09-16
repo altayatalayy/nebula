@@ -1,47 +1,22 @@
 .flex-container {
     display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
 
 .zone{
-	width:100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: solid 1px;
-	border-radius: 8px;
-	padding: 20px 30px 20px 30px;
-	margin-bottom: 15px;
-}
-
-.dropzone {
-	border: none !important;
-	background: rgb(209, 206, 206) !important;
-	border-radius: 8px !important;
-	width: 100% !important;
-	min-width: 200px !important;
+	display: none;
 }
 
 .dz-image-preview{
 	background: transparent !important;
 }
 
-.dropzone-button{
-	width: 100px;
-	padding: 5px;
-	background-color:silver;
-	border-radius: 10px;
-	font-family:'Times New Roman', Times, serif;
-	font-size: 10pt;
-	font-weight: 500;
-}
 .file a, .folder a{
 	font-family:"Lucida Console";
 	font-size:8pt;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	padding: ;
 }
 
 .file a:link, .folder a:link {
@@ -65,7 +40,6 @@
 }
 
 .file , .folder {
-	margin: 10px;
 	padding: 5px;
 }
 

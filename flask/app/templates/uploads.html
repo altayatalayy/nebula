@@ -1,17 +1,15 @@
 {% extends "layout.html" %}
 
 {% block preample%}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/dropzone.min.css">
 	<link rel="stylesheet", href="static/css/uploads.css">
-	<script src="static/js/dropzone.js"></script>
-	<link rel="stylesheet", href="static/css/dropzone.css">
 	<script src="static/js/uploads.js"></script>
 {% endblock preample %}
 
 {% block content %}
 	<div class="zone">
-		<form action="/upload-file" class="dropzone" id="my-awesome-dropzone" method='POST'>
-			<button class="dropzone-button" type="submit">Submit</button> 
-		</form>
+		
 	</div>
 	<div class="flex-container">
 		{% for f in files %}

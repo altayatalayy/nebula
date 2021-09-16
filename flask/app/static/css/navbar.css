@@ -1,10 +1,12 @@
 .nav-main {
 	min-width: 300px;
+	min-height: 50px;
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 6%;
-	background-color: #ecf0f1;
+	background-color: #161616;
+	/*background-color: #ecf0f1;*/
 	display: flex;
 	flex-wrap: wrap;
 	z-index: 1000;
@@ -13,7 +15,7 @@
 .btn-toggle-nav {
 	width: 60px;
 	height: 100%;
-	background-color: #353535;
+	/*background-color: #353535;*/
 }
 
 .btn-toggle-nav:hover {
@@ -50,7 +52,7 @@
 	padding: 0 10px;
 	text-transform: uppercase;
 	text-decoration: none;
-	color: #2c3e50;
+	color: #ecf0f1;
 	font-family: arial;
 	font-size: 2.5ex;
 }
@@ -61,15 +63,17 @@
 }
 
 .nav-sidebar {
+	visibility: hidden;	
 	position: fixed;
 	left: 0;
 	bottom: 0;
-	width: 50px;
+	top: max(6%, 50px);
+	width: 0px;
 	height: 94%;
 	padding: 0 5px;
-	background-color: #353535;
+	background-color: #161616;
 	z-index: 1000;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .nav-sidebar ul {
@@ -98,5 +102,5 @@
 }
 
 .nav-sidebar ul li a:hover {
-	background-color: #505050;
+	background-color: #202020;
 }

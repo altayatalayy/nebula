@@ -8,8 +8,9 @@ let toggleNav = function() {
 	let getSidebarLink = document.querySelectorAll(".nav-sidebar a");
 	           
 	if (toggleNavStatus === false) {
+		getSidebar.style.visibility = "visible";
 		getSidebarUl.style.visibility = "visible";
-		getSidebar.style.width = "300px";
+		getSidebar.style.width = "220px";
 		getSidebarTitle.style.opacity = "0.5";
 
 		let arrayLength = getSidebarLink.length;
@@ -21,7 +22,7 @@ let toggleNav = function() {
 
 	// Check if sidebar is open
 	else if (toggleNavStatus === true) {
-		getSidebar.style.width = "50px";
+		getSidebar.style.width = "0px";
 		getSidebarTitle.style.opacity = "0";
 
 		let arrayLength = getSidebarLink.length;
@@ -29,6 +30,7 @@ let toggleNav = function() {
 			getSidebarLink[i].style.opacity = "0";
 		}
 
+		getSidebar.style.visibility = "hidden";
 		getSidebarUl.style.visibility = "hidden";
 		toggleNavStatus = false;
 	}  
