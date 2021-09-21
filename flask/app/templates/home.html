@@ -1,13 +1,30 @@
 {% extends "layout.html" %}
 
 {% block preample%}
-	{% for cdn in cdn_js %}
-		<script src={{cdn}} crossorigin="anonymous"></script>
-	{% endfor %}
+<link rel="stylesheet" , href="static/css/home.css">
+{% for cdn in cdn_js %}
+<script src={{cdn}} crossorigin="anonymous"></script>
+{% endfor %}
 
-	{{script|safe}}
+{{script|safe}}
 {% endblock preample %}
 
 {% block content %}
-	{{div|safe}}
+<div class="content">
+	<div id="summary-graphs">
+		{{div|safe}}
+	</div>
+
+	<div id="summary-panel">
+		<h1 class="panel-element" id="cpu-info">CPU Usage: %49</h1>
+		<h1 class="panel-element" id="cpu-heat">CPU Heat: 43F</h1>
+		<h1 class="panel-element" id="gpu-info">GPU Usage: %2</h1>
+		<h1 class="panel-element" id="ram-info">RAM Usage: 6GB/16GB</h1>
+	</div>
+
+	<div id="process-panel">
+
+	</div>
+</div>
+
 {% endblock content %}

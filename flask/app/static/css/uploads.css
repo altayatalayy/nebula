@@ -1,49 +1,62 @@
-.flex-container {
-    display: flex;
-	flex-direction: column;
+.zone {
+  display: none;
 }
 
-.zone{
-	display: none;
+.content {
+  min-width: 300px;
+  width: 90%;
+  margin-top: 7%;
+  background-color: rgba(160, 150, 150, 0);
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
-.dz-image-preview{
-	background: transparent !important;
+.dz-image-preview {
+  background: transparent !important;
 }
 
-.file a, .folder a{
-	font-family:"Lucida Console";
-	font-size:8pt;
-	display: flex;
-	flex-direction: row;
-	padding: ;
+.file a,
+.folder a {
+  font-family: "Lucida Console";
+  font-size: 8pt;
+  display: flex;
+  flex-direction: row;
 }
 
-.file a:link, .folder a:link {
-	color: black;
-	text-decoration: none;
+.file a:link,
+.folder a:link {
+  color: black;
+  text-decoration: none;
 }
 
-.file a:visited, .folder a:visited {
-	color: black;
-	text-decoration: none;
+.file a:visited,
+.folder a:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .file a:hover .folder a:hover {
-	color: grey;
-	text-decoration: underline;
+  color: grey;
+  text-decoration: underline;
 }
 
 .file a:active .folder a:active {
-	color: grey;
-	text-decoration: underline;
+  color: grey;
+  text-decoration: underline;
 }
 
-.file , .folder {
-	padding: 5px;
+.file,
+.folder {
+  padding: 5px;
 }
 
-.file-image, .folder-image{
-	margin-bottom: 8px;
-	font-size: 50px;
+.file-image,
+.folder-image {
+  margin-bottom: 8px;
+  font-size: 50px;
 }
